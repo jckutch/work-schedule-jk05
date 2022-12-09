@@ -21,6 +21,28 @@ $(document).ready(function () {
     // time-block containing the button that was clicked? How might the id be
     // useful when saving the description in local storage?
     //
+
+    function blockTense(){
+      $('.time-block').each(function(){
+        var timeBlock = parseInt($(this).attr('id').split('hour-')[1]);
+
+        if (currentTime == timeBlock){
+          $(this).removeClass('future');
+          $(this).removeClass('past');
+          $(this).addClass('present');
+        }else if (currentTime > timeBlock){
+          $(this).removeClass('future');
+          $(this).removeClass('present');
+          $(this).addClass('past');
+        }else{
+          $(this).removeClass('present');
+          $(this).removeClass('past');
+          $(this).addClass('future');
+        }
+
+        blockTense();
+        })
+      })
     // TODO: Add code to apply the past, present, or future class to each time
     // block by comparing the id to the current hour. HINTS: How can the id
     // attribute of each time-block be used to conditionally add or remove the
