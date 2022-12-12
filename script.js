@@ -18,6 +18,12 @@ $(document).ready(function(){
   $('#time-9 .description').val(localStorage.getItem('time-9'));
   $('#time-10 .description').val(localStorage.getItem('time-10'));
   $('#time-11 .description').val(localStorage.getItem('time-11'));
+  $('#time-12 .description').val(localStorage.getItem('time-12'));
+  $('#time-13 .description').val(localStorage.getItem('time-13'));
+  $('#time-14 .description').val(localStorage.getItem('time-14'));
+  $('#time-15 .description').val(localStorage.getItem('time-15'));
+  $('#time-16 .description').val(localStorage.getItem('time-16'));
+  $('#time-17 .description').val(localStorage.getItem('time-17'));
 
     // TODO: Add a listener for click events on the save button. This code should
     // use the id in the containing time-block as a key to save the user input in
