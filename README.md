@@ -29,6 +29,7 @@ THEN the saved events persist
 
 ## Mock-up
 
+![password-image](./assets/workCalendarMockup.jpeg)
 
 ## Website Link
 
